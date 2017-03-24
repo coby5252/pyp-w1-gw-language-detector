@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
 """This is the entry point of the program."""
-from languages import LANGUAGES
-
 def score_language(text, language):
     common_words = language['common_words']
     score_list = [ 1 for x in text if x.lower() in common_words]
